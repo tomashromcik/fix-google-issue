@@ -85,6 +85,17 @@
             margin-right: 15px;
             color: #1565c0;
         }
+        
+        /* ===== NOVÝ STYL ZDE ===== */
+        /* Styl pro odkaz v nadpisu */
+        .step-section h2 a {
+            color: inherit; /* Odkaz bude mít barvu nadpisu */
+            text-decoration: underline;
+        }
+        .step-section h2 a:hover {
+            color: #1565c0; /* Zmodrá při najetí */
+        }
+
 
         /* Obsah sekce */
         .details-content {
@@ -194,7 +205,10 @@
             <section class="step-section" id="krok-2">
                 <h2>
                     <i class="material-icons">desktop_windows</i>
-                    KROK 2: Řešení, pokud zařízení "NENÍ certifikováno"
+                    KROK 2: Řešení, pokud zařízení 
+                    <a href="necertifikovana-zarizeni.html" target="_blank" title="Otevřít podrobnosti v novém okně">
+                        "NENÍ certifikováno"
+                    </a>
                 </h2>
                 <div class="details-content">
                     <p>Pokud váš telefon není certifikovaný, aplikace (Gmail, Učebna) na něm nebudou pro školní účet spolehlivě fungovat. Jediným řešením je používat školní účet v internetovém prohlížeči:</p>
