@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Návod na řešení problémů s účtem Google</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        /* Plynulé scrollování při kliknutí na odkaz */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Základní nastavení stránky */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Hlavní kontejner článku */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        /* Hlavička článku */
+        .header {
+            background-color: #0d47a1; /* Tmavě modrá */
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header .material-icons {
+            font-size: 3em;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        /* Obsah článku */
+        .content {
+            padding: 30px;
+        }
+        .content p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .content hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+        }
+
+        /* NOVÉ: Jednotlivá sekce kroku */
+        .step-section {
+            padding-top: 20px; /* Odsazení pro kotvu */
+            margin-top: -20px; /* Kompenzace odsazení */
+        }
+
+        /* NOVÉ: Nadpis sekce (dříve summary) */
+        .step-section h2 {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #0d47a1;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 20px;
+        }
+        .step-section h2 .material-icons {
+            margin-right: 15px;
+            color: #1565c0;
+        }
+
+        /* Obsah sekce */
+        .details-content {
+            padding: 0;
+        }
+        .details-content ol {
+            padding-left: 25px;
+        }
+        .details-content li {
+            margin-bottom: 10px;
+        }
+        .details-content h3 {
+             color: #333;
+             border-bottom: 1px solid #f0f0f0;
+             padding-bottom: 5px;
+             margin-top: 25px;
+        }
+
+        /* NOVÉ: Odkaz pro klikatelný box */
+        .box-link {
+            text-decoration: none;
+            color: inherit;
+            display: block; /* Dělá celý box odkazem */
+        }
+        
+        /* Barevné informační boxy */
+        .info-box {
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border-left: 5px solid;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        /* NOVÉ: Efekt při najetí myší na box */
+        .info-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            cursor: pointer;
+        }
+        
+        .info-box-success {
+            background-color: #e8f5e9; /* Světle zelená */
+            border-color: #4caf50; /* Zelená */
+        }
+        .info-box-warning {
+            background-color: #fff3e0; /* Světle oranžová */
+            border-color: #ff9800; /* Oranžová */
+        }
+        .info-box strong {
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <h1>
+                <i class="material-icons">phonelink_setup</i>
+                Návod na řešení problémů s účtem Google
+            </h1>
+        </div>
+
+        <div class="content">
+            <p>Vážení rodiče, pokud se potýkáte s opakovaným odpojováním školního účtu Google ve vašem telefonu, připravili jsme pro vás tento přehledný návod. Příčinou je téměř vždy nastavení přímo ve vašem telefonu.</p>
+            <p>Postupujte prosím podle následujících kroků.</p>
+            <hr>
+
+            <section class="step-section" id="krok-1">
+                <h2>
+                    <i class="material-icons">checklist</i>
+                    KROK 1: Ověřte, zda je váš telefon certifikovaný
+                </h2>
+                <div class="details-content">
+                    <p>Nejprve musíme zjistit, zda Google vašemu telefonu plně důvěřuje. Je to nejdůležitější test.</p>
+                    <ol>
+                        <li>Ve svém telefonu otevřete aplikaci <strong>"Obchod Play"</strong> (ikona barevného trojúhelníku).</li>
+                        <li>Vpravo nahoře klikněte na ikonu svého profilu (vaše fotografie nebo písmeno).</li>
+                        <li>Z nabídky vyberte <strong>"Nastavení"</strong>.</li>
+                        <li>V menu "Nastavení" klikněte úplně dole na položku <strong>"O aplikaci"</strong>.</li>
+                        <li>Sjeďte dolů na nadpis <strong>"Certifikace Play Protect"</strong>.</li>
+                    </ol>
+                    
+                    <a href="#krok-2" class="box-link">
+                        <div class="info-box info-box-warning">
+                            <strong>Pokud je tam napsáno "Zařízení NENÍ certifikováno":</strong>
+                            Našli jsme příčinu. Google váš telefon nepovažuje za bezpečný a proto školní účet aktivně odpojuje. <strong>Klikněte sem pro řešení (KROK 2).</strong>
+                        </div>
+                    </a>
+                    
+                    <a href="#krok-3" class="box-link">
+                        <div class="info-box info-box-success">
+                            <strong>Pokud je tam napsáno "Zařízení je certifikováno":</strong>
+                            Váš telefon je v pořádku. Problém je pravděpodobně v agresivní úspoře baterie. <strong>Klikněte sem pro řešení (KROK 3).</strong>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="step-section" id="krok-2">
+                <h2>
+                    <i class="material-icons">desktop_windows</i>
+                    KROK 2: Řešení, pokud zařízení "NENÍ certifikováno"
+                </h2>
+                <div class="details-content">
+                    <p>Pokud váš telefon není certifikovaný, aplikace (Gmail, Učebna) na něm nebudou pro školní účet spolehlivě fungovat. Jediným řešením je používat školní účet v internetovém prohlížeči:</p>
+                    <ol>
+                        <li>Ve svém telefonu otevřete aplikaci prohlížeče (např. <strong>Chrome</strong>, Samsung Internet atd.).</li>
+                        <li>Do adresního řádku nahoře napište adresu e-mailu: <strong>gmail.com</strong></li>
+                        <li>Pro přístup do učebny napište: <strong>classroom.google.com</strong></li>
+                        <li>Přihlaste se svými školními přihlašovacími údaji. Webová verze bude fungovat.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="step-section" id="krok-3">
+                <h2>
+                    <i class="material-icons">battery_alert</i>
+                    KROK 3: Řešení, pokud je zařízení "Certifikováno" (ale zlobí)
+                </h2>
+                <div class="details-content">
+                    <p>Příčinou je zde téměř jistě agresivní spořič baterie, který "uspává" důležité procesy na pozadí. Musíme mu to zakázat.</p>
+                    
+                    <h3>Část A: Nastavení pro aplikaci Gmail</h3>
+                    <ol>
+                        <li>Otevřete <strong>Nastavení</strong> ve vašem telefonu.</li>
+                        <li>Najděte položku <strong>Aplikace</strong> (nebo "Správa aplikací").</li>
+                        <li>Najděte v seznamu a klepněte na aplikaci <strong>Gmail</strong>.</li>
+                        <li>Najděte položku <strong>Využití baterie</strong> (nebo "Spořič baterie").</li>
+                        <li>Vyberte možnost <strong>"Bez omezení"</strong> (nebo "Neoptimalizovat").</li>
+                    </ol>
+
+                    <h3>Část B: Nastavení pro Služby Google Play (Klíčový krok)</h3>
+                    <ol>
+                        <li>Vraťte se do <strong>Nastavení</strong> -> <strong>Aplikace</strong>.</li>
+                        <li>Najděte aplikaci <strong>"Služby Google Play"</strong> (má šedou ikonu puzzle).</li>
+                        <li>Klepněte na ni.</li>
+                        <li>Opět najděte položku <strong>Využití baterie</strong> (nebo "Spořič baterie").</li>
+                        <li>Opět vyberte možnost <strong>"Bez omezení"</strong> (nebo "Neoptimalizovat").</li>
+                    </ol>
+                    
+                    <h3>Část C: Restart</h3>
+                    <p>Po provedení změn v Části A i B prosím <strong>RESTARTUJTE VÁŠ TELEFON</strong>. Následně se zkuste k účtu znovu přihlásit (pokud je to potřeba).</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
