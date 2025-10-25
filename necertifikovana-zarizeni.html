@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co znamená "Zařízení není certifikováno"?</title>
+    
+    <style>
+        /* Základní nastavení stránky */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Hlavní kontejner článku */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        /* Hlavička článku */
+        .header {
+            background-color: #c62828; /* Tmavě červená pro varování */
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* Obsah článku */
+        .content {
+            padding: 30px;
+        }
+        .content p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .content hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+        }
+        .content ul {
+            padding-left: 25px;
+        }
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        /* Sekce */
+        .step-section {
+             margin-top: 20px;
+        }
+        .step-section h2 {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #c62828; /* Tmavě červená */
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 20px;
+        }
+        .step-section h3 {
+             color: #333;
+             border-bottom: 1px solid #f0f0f0;
+             padding-bottom: 5px;
+             margin-top: 25px;
+        }
+        
+        /* Barevné informační boxy */
+        .info-box {
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border-left: 5px solid;
+        }
+        .info-box-success {
+            background-color: #e8f5e9; /* Světle zelená */
+            border-color: #4caf50; /* Zelená */
+        }
+        .info-box-warning {
+            background-color: #fff3e0; /* Světle oranžová */
+            border-color: #ff9800; /* Oranžová */
+        }
+        .info-box strong {
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <h1>
+                Co znamená "Zařízení NENÍ certifikováno"?
+            </h1>
+        </div>
+
+        <div class="content">
+            <p>Při kontrole v aplikaci Obchod Play jste v Kroku 1 zjistili, že váš telefon hlásí <strong>"Zařízení NENÍ certifikováno"</strong>. Zde je podrobné vysvětlení, co to znamená a proč to způsobuje problémy se školním účtem.</p>
+            <p>Zjednodušeně řečeno: váš telefon nemá od společnosti Google platný "technický průkaz". Google jej proto nepovažuje za 100% bezpečný a důvěryhodný pro nakládání s citlivými školními daty.</p>
+
+            <hr>
+            
+            <div class="info-box info-box-warning">
+                <strong>Proč ale funguje můj soukromý Gmail (@gmail.com)?</strong>
+                <p style="margin-bottom: 0;">Toto je klíčová otázka. Odpověď spočívá v úrovni zabezpečení:</p>
+                <ul>
+                    <li><strong>Soukromý účet:</strong> Google chrání pouze vás. Pokud používáte necertifikovaný telefon, je to <strong>vaše riziko</strong>. Google je tolerantnější.</li>
+                    <li><strong>Školní účet:</strong> Google chrání <strong>celou organizaci</strong> (všechny žáky, učitele a školní data). Riziko je příliš vysoké. Bezpečnostní systém Google proto aktivně odpojuje necertifikovaná zařízení, aby ochránil data celé školy.</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <section class="step-section" id="duvody">
+                <h2>Hlavní důvody, proč telefon není certifikovaný</h2>
+                
+                <h3>1. "Šedý dovoz" (nákup ze zahraničí)</h3>
+                <p>Toto je nejčastější příčina. Koupili jste telefon levněji (např. z čínského e-shopu nebo od neoficiálního dovozce), který byl původně určen pro čínský trh. Tyto telefony z výroby nemají Obchod Play. Prodejce do nich proto ručně a neoficiálně nahrál služby Google, aby je mohl prodat v Evropě. Google takový telefon okamžitě pozná a odmítne mu důvěřovat.</p>
+
+                <h3>2. Velmi starý a nepodporovaný software</h3>
+                <p>Vaše zařízení je již tak staré (typicky 5 a více let), že pro něj výrobce nevydává žádné bezpečnostní aktualizace. Běží na zastaralém systému (např. Android 8 a starší), který obsahuje známé bezpečnostní díry. Google takové zařízení blokuje, protože je snadno napadnutelné.</p>
+
+                <h3>3. Neoficiální software (Root nebo Jailbreak)</h3>
+                <p>Pokročilý uživatel (nebo někdo před vámi) si telefon "odemkl" (provedl tzv. "root"), aby získal plnou kontrolu nad systémem. Tímto zásahem se však kompletně zničí všechny vestavěné bezpečnostní mechanismy telefonu.</p>
+                
+                <h3>4. Nové telefony Huawei</h3>
+                <p>Kvůli americkým sankcím nesmí nové modely telefonů Huawei (vydané po roce 2019/2020) používat oficiální služby Google z výroby. Pokud si na nich někdo služby Google aktivoval ručně, jsou považovány za necertifikované.</p>
+            </section>
+
+            <hr>
+
+            <section class="step-section" id="priklady">
+                <h2>Příklady často problematických zařízení</h2>
+                <p>Problém není značka jako taková, ale spíše stáří nebo původ telefonu. Nejčastěji se potíže týkají těchto kategorií:</p>
+                <ul>
+                    <li><strong>Telefony z "šedého dovozu":</strong> Zejména modely značek Xiaomi, Redmi, Poco nebo Realme zakoupené mimo oficiální českou distribuci.</li>
+                    <li><strong>Velmi staré modely:</strong> Např. Samsung Galaxy S8, S7, S6 nebo staré modely řad Galaxy A a J (z roku 2017 a starší).</li>
+                    <li><strong>Nové modely Huawei:</strong> Řady P40, P50, P60, Mate 40, Mate 50 atd.</li>
+                    <li><strong>Ultra-levné čínské značky:</strong> Např. Doogee, Ulefone, Oukitel, Blackview a další, které šetří na licenčních poplatcích za certifikaci.</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section class="step-section" id="reseni">
+                <h2>Jediné spolehlivé řešení</h2>
+                <p>Pokud váš telefon není certifikovaný, není ve vaší ani naší moci toto nastavení změnit. Jediným spolehlivým řešením, jak se ke školnímu účtu dostat, je používat webový prohlížeč.</p>
+
+                <div class="info-box info-box-success">
+                    <strong>Řešení: Používejte webový prohlížeč</strong>
+                    <ol>
+                        <li>Ve svém telefonu otevřete aplikaci prohlížeče (např. <strong>Chrome</strong>, Samsung Internet atd.).</li>
+                        <li>Do adresního řádku nahoře napište adresu e-mailu: <strong>gmail.com</strong></li>
+                        <li>Pro přístup do učebny napište: <strong>classroom.google.com</strong></li>
+                        <li>Přihlaste se svými školními přihlašovacími údaji. Webová verze bude fungovat.</li>
+                    </ol>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
